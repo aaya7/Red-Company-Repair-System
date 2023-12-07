@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="div1">
+        <ul>
+            <li><a style="float: left;" onclick= "location.href = 'welcome.html';">Home</a></li>
+            <li><a style="float: left;" onclick= "javascript:history.back()">Previous</a></li>
+            <li><a style="float: left;" onclick= "location.href = 'devicerepair.php';">Next</a></li>
+        </ul>
+        <div class="menu_cont">
+            <p style="padding: 10px;">Your account has successfully created!<br>
+                Press the MENU button below to proceed.</p>
+                <div class="dropdown">
+                    <button class="button_animated"><span>MENU</span></button>
+                <div class="dropdown-content">
+                    <a href="welcome.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="welcome.php">Edit Profile</a>
+                    <a href="devicerepair.php">Customer Device</a>
+                    <a href="repair.php">Repair</a>
+                    <a href="service.php">Service</a>
+                    <a href="payment.php">Payment</a>
+                    <a onclick=" location.href='logout.php'; 
+                    return confirm('Are You sure you want to logout?');">Log Out</a>
+                </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

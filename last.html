@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="div2">
+        <ul>
+            <li><a style="float: left;" onclick= "location.href = 'welcome.html';">Home</a></li>
+            <li><a style="float: left;" onclick= "javascript:history.back()">Previous</a></li>
+            <li><a style="float: left;" onclick=" location.href='logout.php'; 
+                return confirm('Are You sure you want to logout?');">Log Out</a>
+            </li>
+            <li class="dropdowns" style="float: right;">
+                <a href="javascript:void(0)" class="dropbtn"><span>&#8803;</span></a>
+                <div class="dropdowns-content">
+                    <a href="welcome.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="welcome.php">Edit Profile</a>
+                    <a href="devicerepair.php">Customer Device</a>
+                    <a href="repair.php">Repair</a>
+                    <a href="service.php">Service</a>
+                    <a href="payment.php">Payment</a>
+                    <a onclick=" location.href='logout.php'; 
+                    return confirm('Are You sure you want to logout?');">Log Out</a>
+                </div>
+            </li>
+        </ul>
+        <div class="comp_logo">
+            <img  src="RED.png" width="150px" height="150px">
+            <h1 style="font-size: 23px"><br>YOUR DEVICE IS READY TO BE PICKED UP<br><br></h1>
+            <p style="font-size: 23px">Thank you for using our service. Feel free to request any service again<br>by visiting our website. Have a great day!</p>
+        </div>
+    </div>
+</body>
+</html>
